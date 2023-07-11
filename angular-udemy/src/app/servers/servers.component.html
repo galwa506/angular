@@ -1,0 +1,17 @@
+<!-- Notes -->
+<!-- if you want to output something in your template, print text to it, use string interpolation -->
+<!-- if you want to change some property,, be that of an html element or as you learn later learn off a directive or a component, use property binding-->
+
+<label>Server Name</label><br>
+
+<!-- <input type="text" class="form-control"
+(input) = "onUpdateServerName($event)"> -->
+
+<input type="text" class="form-control"
+ [(ngModel)] = "serverName">
+<!-- <p>{{serverName}}</p> -->
+
+<button class="btn btn-primary" [disabled] = "!allowNewServer"
+(click) = "onCreateServer() ">Add Server</button> <!-- [] indicates we are using property binding -->
+<!-- <p [innerText] = "allowNewServer"></p> -->
+<p>{{ serverCreationStatus }}</p>
