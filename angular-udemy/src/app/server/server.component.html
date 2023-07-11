@@ -1,5 +1,5 @@
 <!-- string interpolation syntax - {{}}. it has to resolve to string in the end. Tyoe Number works fine with
 interpolation as number can easily be converted to string -->
-
 <!-- property binding - [] = "" -->
-<p> {{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus()}}</p>
+<p [ngStyle] = "{backgroundColor: getColor()}"
+[ngClass] = "{online: serverStatus === 'online'}"> {{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }}</p>
