@@ -9,11 +9,12 @@ export class AppComponent {
   title = 'assignments-3';
 
   detailsDisplayed = false;
-  log: number[] = [];
+  log: Date[] = [];
   
   onToggleDetails(){
     this.detailsDisplayed = !this.detailsDisplayed;
-    this.log.push(this.log.length + 1)
+    // this.log.push(this.log.length + 1)
+    this.log.push(new Date())
   }
 
 
